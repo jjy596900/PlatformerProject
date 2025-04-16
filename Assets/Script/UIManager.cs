@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelObject : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
-    public string nextLevel;
 
-    public void MoveToNextLevel() 
+    public void GameStartButtonAction() 
     {
-        SceneManager.LoadScene(nextLevel);
+        SceneManager.LoadScene("Level_1");
     }
-
 
 
 

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float JumpForce = 5f;
+    public float jumpForce = 5f;
     public Transform groundCheck;
     public LayerMask groundLayer;
 
@@ -19,9 +19,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         pAni = GetComponent<Animator>();
     }
+
     private void Update()
     {
-
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
@@ -31,15 +31,13 @@ public class PlayerController : MonoBehaviour
         if (moveInput > 0)
             transform.localScale = new Vector3(1f, 1f, 1f);
 
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             pAni.SetTrigger("JumpAction");
         }
-
 
     }
 
@@ -55,13 +53,13 @@ public class PlayerController : MonoBehaviour
             collision.GetComponent<LevelObject>().MoveToNextLevel();
         }
 
-        if (collision.CompareTag("Enemy")) 
+        if (collision.CompareTag("Enemy"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
+
     }
 
-
-
+  
 }
