@@ -29603,11 +29603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b0dc78362a649468dd192cd2b2b6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1669084285 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5592399779293818251, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-  m_PrefabInstance: {fileID: 7550960918794662498}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2058133472
 GameObject:
   m_ObjectHideFlags: 0
@@ -31253,42 +31248,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2952615700353274786, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2952615700353274786, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 3607884040110847999, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: m_Size.y
-      value: 0.27917814
-      objectReference: {fileID: 0}
-    - target: {fileID: 3607884040110847999, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.014589161
-      objectReference: {fileID: 0}
-    - target: {fileID: 5592399779293818251, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.17
-      objectReference: {fileID: 0}
     - target: {fileID: 5677977919464914068, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7506769657655671368, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: jumpForce
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506769657655671368, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: moveSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506769657655671368, guid: 2d8c75c860c94b4429cc0056527941d7, type: 3}
-      propertyPath: groundCheck
-      value: 
-      objectReference: {fileID: 1669084285}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

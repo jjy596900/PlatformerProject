@@ -5,23 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject HelpPanel;
 
     public void GameStartButtonAction() 
     {
         SceneManager.LoadScene("Level_1");
     }
 
-
-
-    // Start is called before the first frame update
-    void Start()
+    public void OpenHelpPanel()
     {
-        
+        HelpPanel.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CloseHelpPanel() 
     {
-        
+        HelpPanel.SetActive(false);
     }
+
+
 }
